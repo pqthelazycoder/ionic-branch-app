@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard/tabs/order-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Order Items</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-grid>
+     <ion-row>
+       <ion-col>
+         <ion-list>
+           <ion-item *ngFor="let item of loadedOrderItems">
+             <ion-label text-center>
+              <p> {{item.transactionId}} </p>
+              <p> {{item.description}} </p>
+              <p> {{item.amount | currency:'&#8369;'}} </p>
+              </ion-label>
+           </ion-item>
+         </ion-list>
+       </ion-col>
+    </ion-row>
+   </ion-grid>
+</ion-content>

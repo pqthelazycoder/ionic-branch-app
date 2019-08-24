@@ -12,6 +12,9 @@ const routes: Routes = [{
               {
                   path: '',
                   loadChildren: './order-list/order-list.module#OrderListPageModule'
+              }, {
+                 path: ':id',
+                  loadChildren: './order-list/order-item-list/order-item-list.module#OrderItemListPageModule'
               }
           ]      },
       {path: 'new-order',
