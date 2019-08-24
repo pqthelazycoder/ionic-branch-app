@@ -58,9 +58,5 @@
     "tslint": "~5.15.0"
 
   },
-  "engines": {
-    "node": "~8.15.1",
-    "npm": "~6.4.1"
-  },
   "description": "An Ionic project"
 }
